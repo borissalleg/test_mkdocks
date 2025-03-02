@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="../diagrams/">
+        <link rel="prev" href="../mkdocs/">
       
       
-        <link rel="next" href="../services/">
+        <link rel="next" href="../contents-tabs/">
       
       
       <link rel="icon" href="../assets/favicon.ico">
@@ -22,7 +22,7 @@
     
     
       
-        <title>About - MKDocs - una guia sencilla</title>
+        <title>Markdown - MKDocs - una guia sencilla</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#about-this-project" class="md-skip">
+        <a href="#guia-de-markdown-categorias-y-funcionalidades" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              About
+              Markdown
             
           </span>
         </div>
@@ -266,10 +266,19 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../markdown/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -279,6 +288,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -329,19 +339,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -351,7 +352,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -432,8 +432,214 @@
 
 
 
-<h1 id="about-this-project">About this project</h1>
-<p>This is the about page.</p>
+<h1 id="guia-de-markdown-categorias-y-funcionalidades"><strong>Guía de Markdown: Categorías y Funcionalidades</strong></h1>
+<p>Markdown es un lenguaje de marcado ligero que permite formatear texto sin necesidad de herramientas complejas.</p>
+<p>A continuación, se detallan las categorías principales y sus funcionalidades.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:7"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><input id="__tabbed_1_6" name="__tabbed_1" type="radio" /><input id="__tabbed_1_7" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Formato de Texto</label><label for="__tabbed_1_2">Encabezados</label><label for="__tabbed_1_3">Listas</label><label for="__tabbed_1_4">Tabuladores</label><label for="__tabbed_1_5">Bloques de Código</label><label for="__tabbed_1_6">Links</label><label for="__tabbed_1_7">Acordeon</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<details class="note" open="open">
+<summary>Markdown</summary>
+<p>permite aplicar formato básico al texto, como negrita, cursiva, tachado, etc.</p>
+<details class="info" open="open">
+<summary>Negrita</summary>
+<div class="language-text highlight"><pre><span></span><code>**Negrita:** Usa doble asterisco (** ) o doble guion bajo (__).
+</code></pre></div>
+<details class="example" open="open">
+<summary>Ejemplo</summary>
+<p>Este es un texto en <strong><em>*</em>*negrita</strong>**</p>
+<p>El resultado es <strong>negrita</strong>.</p>
+</details>
+</details>
+<details class="info" open="open">
+<summary>Cursiva</summary>
+<p><strong>Cursiva</strong> : Usa un asterisco (*) o un guion bajo (_)</p>
+<details class="example" open="open">
+<summary>Ejemplo</summary>
+<p>Este es un texto en negrita y <strong><em>cursiva.</em></strong></p>
+</details>
+</details>
+<details class="info" open="open">
+<summary>Tachado</summary>
+<p><strong>Tachado:</strong> Usa dos tildes (~~).</p>
+<details class="example" open="open">
+<summary>Ejemplo</summary>
+<p>Este es un texto ~~tachado~~</p>
+<p>El resultado es ~~tachado~~</p>
+</details>
+</details>
+</details>
+</div>
+<div class="tabbed-block">
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Los encabezados permiten organizar el contenido jerárquicamente.</p>
+<p><strong>Funcionalidades:</strong>
+Usa almohadillas (#) para definir niveles de encabezados</p>
+<h1 id="titulo-principal-h1-">Título principal (H1)-</h1>
+<div class="language-text highlight"><pre><span></span><code># Título principal
+</code></pre></div>
+<h2 id="subtitulo-h2">Subtítulo (H2)</h2>
+<div class="language-text highlight"><pre><span></span><code>## Subtítulo
+</code></pre></div>
+<h3 id="seccion-h3">Sección (H3)</h3>
+<div class="language-text highlight"><pre><span></span><code>### Sección
+</code></pre></div>
+<h4 id="subseccion-h4">Subsección (H4)</h4>
+<div class="language-text highlight"><pre><span></span><code>#### Subsección
+</code></pre></div>
+<h5 id="subsubseccion-h5">Subsubsección (H5)</h5>
+<div class="language-text highlight"><pre><span></span><code>##### Subsubsección
+</code></pre></div>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Las listas son útiles para organizar información en puntos o pasos numerados.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Listas no ordenadas</label><label for="__tabbed_2_2">Listas ordenadas</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-text highlight"><pre><span></span><code>Usa asteriscos (*), guiones (-) o signos de suma (+)
+</code></pre></div>
+<ul>
+<li>Elemento 1</li>
+<li>Elemento 2<ul>
+<li>Subelemento 2.1</li>
+<li>Subelemento 2.2</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<div class="language-text highlight"><pre><span></span><code>Usa números seguidos de un punto (.)
+</code></pre></div>
+<ol>
+<li>Primer paso</li>
+<li>Segundo paso<ol>
+<li>Subpaso 2.1</li>
+<li>Subpaso 2.2</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="admonition note">
+<p class="admonition-title">Tabuladores con contenido</p>
+<p>Permiten incluir contenido en una nota</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:7"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><input id="__tabbed_3_5" name="__tabbed_3" type="radio" /><input id="__tabbed_3_6" name="__tabbed_3" type="radio" /><input id="__tabbed_3_7" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">nota</label><label for="__tabbed_3_2">Warning</label><label for="__tabbed_3_3">danger</label><label for="__tabbed_3_4">info</label><label for="__tabbed_3_5">tip</label><label for="__tabbed_3_6">example</label><label for="__tabbed_3_7">Anidados</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="admonition note">
+<p class="admonition-title">nota</p>
+<p>se escribre asi!!!note "nota"</p>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="admonition warning">
+<p class="admonition-title">warning</p>
+<p>se escribe warning</p>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="admonition danger">
+<p class="admonition-title">danger</p>
+<p>se escribe danger !!!danger</p>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="admonition info">
+<p class="admonition-title">info</p>
+<p>se escribe info !!!info</p>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="admonition tip">
+<p class="admonition-title">tip</p>
+<p>se escribe tip !!!tip</p>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="admonition example">
+<p class="admonition-title">example</p>
+<p>se escribe example !!!example</p>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="admonition note">
+<p class="admonition-title">Nota principal</p>
+<p>Este es el contenido de la nota principal.</p>
+<div class="admonition warning">
+<p class="admonition-title">Advertencia anidada</p>
+<p>Esta es una advertencia dentro de la nota principal.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="admonition note">
+<p class="admonition-title">Markdown</p>
+<p>Markdown permite incluir bloques de código con resaltado de sintaxis para diferentes lenguajes.</p>
+<p><strong>Funcionalidades:</strong>
+<strong>Bloques en línea :</strong> Se utiliza (===), se identifica el tipo de bloque</p>
+</div>
+<h2 id="bloques-de-codigo">Bloques de Código</h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Java</label><label for="__tabbed_4_2">Python</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-text highlight"><pre><span></span><code>    ```java linenums=&quot;1&quot; hl_lines=&quot;3&quot;
+    public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println(&quot;¡Hola, mundo!&quot;);
+        }
+    }
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<p>assas
+<div class="language-py highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello world!&quot;</span><span class="p">)</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="n">main</span><span class="p">()</span>
+</span></code></pre></div></p>
+</div>
+</div>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Enlaces:</strong> Usa corchetes (<code>[]</code>) para el texto y paréntesis (<code>()</code>) para la URL.</p>
+<p>Para complementar visita el siguiente link <a href="https://youtu.be/xlABhbnNrfI?si=UowrjDJyWbUgfIN3">Visita este sitio</a></p>
+</div>
+</div>
+<div class="tabbed-block">
+<details class="info" open="open">
+<summary>Acordeón 1 (expandido por defecto)</summary>
+<p>Este acordeón está expandido por defecto gracias al signo <code>+</code>.</p>
+</details>
+<details class="info" open="open">
+<summary>Acordeón 2 (colapsado por defecto)</summary>
+<p>Este acordeón está colapsado por defecto.</p>
+</details>
+<details class="info" open="open">
+<summary>Acordeón 3 (con contenido avanzado)</summary>
+<p><code>python linenums="1"
+   def main():
+        print("¡Hola, mundo!")</code>
+    Este acordeón incluye un bloque de código Python.</p>
+</details>
+</div>
+</div>
+</div>
 
 
 
@@ -465,7 +671,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Pie" >
         
           
-          <a href="../diagrams/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Diagrams">
+          <a href="../mkdocs/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: MKDocs">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -475,20 +681,20 @@
                 Anterior
               </span>
               <div class="md-ellipsis">
-                Diagrams
+                MKDocs
               </div>
             </div>
           </a>
         
         
           
-          <a href="../services/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Services">
+          <a href="../contents-tabs/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Contents Tabs">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Siguiente
               </span>
               <div class="md-ellipsis">
-                Services
+                Contents Tabs
               </div>
             </div>
             <div class="md-footer__button md-icon">
