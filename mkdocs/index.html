@@ -61,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#que-es-mkdocs" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -213,6 +218,20 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    MKDocs
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -224,6 +243,67 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#caracteristicas-principales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Características principales
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#composicion-de-mkdocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Composición de MkDocs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#categorias-de-configuracion-en-mkdocsyml" class="md-nav__link">
+    <span class="md-ellipsis">
+      Categorías de Configuración en mkdocs.yml
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Categorías de Configuración en mkdocs.yml">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-configuracion-basica" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Configuración básica
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -309,6 +389,58 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#caracteristicas-principales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Características principales
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#composicion-de-mkdocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Composición de MkDocs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#categorias-de-configuracion-en-mkdocsyml" class="md-nav__link">
+    <span class="md-ellipsis">
+      Categorías de Configuración en mkdocs.yml
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Categorías de Configuración en mkdocs.yml">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-configuracion-basica" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Configuración básica
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -324,9 +456,59 @@
 
 
 
-  <h1>MKDocs</h1>
-
-
+<h1 id="que-es-mkdocs">¿Qué es MkDocs?</h1>
+<p>MkDocs es una herramienta moderna y sencilla para generar sitios web de documentación a partir de archivos Markdown. Está diseñada para ser rápida, fácil de usar y altamente personalizable. Con MkDocs, puedes escribir tu documentación en archivos Markdown simples y convertirlos en un sitio web estático y profesional con un solo comando.</p>
+<h2 id="caracteristicas-principales">Características principales</h2>
+<ul>
+<li><strong>Basado en Markdown</strong>: Usa archivos <code>.md</code> para escribir la documentación.</li>
+<li><strong>Generación rápida</strong>: Convierte los archivos Markdown en HTML en cuestión de segundos.</li>
+<li><strong>Temas personalizables</strong>: Ofrece temas predefinidos y la posibilidad de crear tus propios diseños.</li>
+<li><strong>Compatibilidad con hosting</strong>: Fácil de desplegar en plataformas como GitHub Pages, GitLab Pages o Netlify.</li>
+<li><strong>Extensible</strong>: Soporta plugins para añadir funcionalidades adicionales.</li>
+</ul>
+<hr />
+<h2 id="composicion-de-mkdocs">Composición de MkDocs</h2>
+<p>Un proyecto de MkDocs está compuesto por los siguientes elementos clave:</p>
+<ol>
+<li><strong>Archivos Markdown</strong>:</li>
+<li>
+<p>Los archivos <code>.md</code> contienen el contenido de la documentación. Estos archivos se organizan en carpetas para representar la estructura del sitio web.</p>
+</li>
+<li>
+<p><strong>Archivo de configuración (<code>mkdocs.yml</code>)</strong>:</p>
+</li>
+<li>
+<p>Es el archivo central que define la configuración del sitio. Aquí se especifica el título del sitio, la navegación, los temas y otros ajustes.</p>
+</li>
+<li>
+<p><strong>Tema</strong>:</p>
+</li>
+<li>
+<p>Define la apariencia visual del sitio. MkDocs incluye temas predeterminados como <code>mkdocs</code> y <code>readthedocs</code>, pero también permite usar temas personalizados.</p>
+</li>
+<li>
+<p><strong>Plugins</strong>:</p>
+</li>
+<li>
+<p>Extensiones opcionales que añaden funcionalidades adicionales al sitio, como generación de PDFs, búsqueda avanzada, etc.</p>
+</li>
+<li>
+<p><strong>Directorio de salida (<code>site/</code>)</strong>:</p>
+</li>
+<li>Es el directorio donde se genera el sitio web estático listo para ser desplegado.</li>
+</ol>
+<hr />
+<h2 id="categorias-de-configuracion-en-mkdocsyml">Categorías de Configuración en <code>mkdocs.yml</code></h2>
+<p>El archivo <code>mkdocs.yml</code> es el corazón de la configuración de MkDocs. A continuación, se describen las principales categorías de configuración disponibles:</p>
+<h3 id="1-configuracion-basica">1. <strong>Configuración básica</strong></h3>
+<ul>
+<li>Define los parámetros generales del sitio.
+   ```yaml
+   site_name: Mi Documentación
+   site_url: https://ejemplo.com
+   site_description: Documentación oficial del proyecto
+   site_author: Tu Nombre</li>
+</ul>
 
 
 
